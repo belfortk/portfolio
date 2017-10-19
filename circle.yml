@@ -2,7 +2,7 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: your-heroku-app-name
+      appname: kbj-portfolio-website
 machine:
   node:
     version: 8.1.4

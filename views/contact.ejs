@@ -66,6 +66,7 @@
       font-family: 'Lato', sans-serif;
       display: block;
       color: #555;
+      position: relative;
     }
 
     #messageToViewer {
@@ -74,15 +75,18 @@
 
 
     @media all and (max-width: 767px) {
-      #messageToViewer{
-        padding: 5px;
+      #messageToViewer {
+        padding: 1em;
+      }
+
+      #form {
+        padding: 20px;
+      }
     }
 
-    #form {
-      padding: 40px;
+    #content {
+      padding-bottom: 4em;
     }
-
-
 
     footer {
       position: absolute;
@@ -90,7 +94,7 @@
       bottom: 0;
       text-align: center;
       overflow: hidden;
-    }
+  }
 
     @media all and (max-width: 767px) {
       .small-screen-icon {
@@ -201,9 +205,9 @@
 <body>
 
   <body>
-    <container>
+    <container >
 
-      <div class='row'>
+      <div class='row' id=content>
         <div class='col-md-6 small-screen-contact-message' id='messageToViewer'>
           <h1>
             Get in touch
@@ -250,10 +254,6 @@
 
 
         </div>
-      </div>
-
-      <div id='contact-form-component'>
-
       </div>
 
     </container>
@@ -311,9 +311,8 @@
         }
       }
     </script>
-  </body>
 
-  <footer>
+<footer>
     <div class=container>
       <div class="row" style="margin: 0px, 120px">
         <div class="col-md-4 small-screen-icon">
@@ -346,5 +345,8 @@
       </div>
     </div>
   </footer>
+  </body>
+
+  
 
 </html>

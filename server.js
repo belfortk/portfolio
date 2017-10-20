@@ -1,9 +1,12 @@
+require('dotenv').config();
 const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 var profile = require("./profile");
 const axios = require("axios");
-const mcAPIKey = "apikey 47bd649739bce024b77057381a86af8f-us17";
+
+const mcAPIKey =  process.env.mailchimpAPIKey; //put your own API Key here
+const mcListURL = process.env.mailchimpListKey; //put your own list key here
 
 const app = express();
 // ...
@@ -50,7 +53,7 @@ app.get("/contact", (req, res) => {
 
 app.post("/contact", (req, res) => {
   var errorMess = null;
-  const mailchimpListURL = "https://us17.api.mailchimp.com/3.0/lists/b46315d170/members/";
+  const mailchimpListURL = mcListURL;
   const options = { headers: { Authorization: mcAPIKey } };
   var mcPOSTObject = {
     email_address: req.body.email,

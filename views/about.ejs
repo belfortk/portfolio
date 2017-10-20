@@ -12,106 +12,124 @@
     <title> It's Me! </title>
 
     <style>
-      html,
-      body {
-        min-height: 100%;
-      }
-  
-      header {
-        background-color: #263d36;
-        background-image: url("https://images.unsplash.com/photo-1489844097929-c8d5b91c456e");
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        line-height: 1.2;
-        padding: 10vw 2em;
-        text-align: center;
-      }
-  
-      #header-text {
-        width: 100%;
-        bottom: 0;
-        text-align: center;
-      }
-  
-      .navbar-nav {
-        margin: auto;
-      }
-  
-      .nav-item {
-        text-align: center;
-        margin-right: 50px;
-      }
-  
-      h1,
-      h2,
-      strong {
-        color: #333;
-      }
+        html,
+        body {
+            min-height: 100%;
+        }
 
-      h3{
-          text-align: center;
-      }
-  
-      body {
-        
-        background: #E0EAFC;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      position:relative;
-      }
-  
-      body {
-        font-family: 'Lato', sans-serif;
-        display: block;
-        color: #555;
-      }
-  
-      footer {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        text-align: center;
-        overflow: hidden;
-      }
-  
-      .container {
-        max-width: 700px;
-        margin: auto;
-        width: 100%;
-        padding-top: 36px;
-      }
-  
-      #info {
-        max-width: 1000;
-        margin: auto;
-        width: 100%;
-        padding-top: 17px;
-        padding-bottom: 92px;
-      }
-      .col-md-4{
-        padding-right: 0;
-      }
-  
-      #email-icon {
-        animation-duration: 1s;
-      }
-  
-      #github-icon {
-        animation-duration: 1.5s;
-        animation-delay: 500ms;
-      }
-  
-      #linkedin-icon {
-        animation-duration: 2s;
-        animation-delay: 500ms;
-      }
-      .col-md-4{
-      padding-right: 0;
-    }
+        header {
+            background-color: #263d36;
+            background-image: url("https://images.unsplash.com/photo-1489844097929-c8d5b91c456e");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            line-height: 1.2;
+            padding: 10vw 2em;
+            text-align: center;
+        }
+
+        #header-text {
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin: auto;
+        }
+
+        .nav-item {
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        h1,
+        h2,
+        strong {
+            color: #333;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        body {
+
+            background: #E0EAFC;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            position: relative;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            display: block;
+            color: #555;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        @media all and (max-width: 767px) {
+            .small-screen-icon {
+                width: 30%;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            width: 100%;
+            padding-top: 36px;
+        }
+
+        img {
+            Box-shadow: 1px 1px 12px #000;
+        }
+
+        .col-md-8 {
+            margin-bottom: 2em;
+        }
+
+        #info {
+            max-width: 1000;
+            margin: auto;
+            width: 100%;
+            padding-top: 17px;
+            padding-bottom: 92px;
+        }
+
+        .col-md-4 {
+            padding-right: 0;
+        }
+
+        #email-icon {
+            animation-duration: 1s;
+        }
+
+        #github-icon {
+            animation-duration: 1.5s;
+            animation-delay: 500ms;
+        }
+
+        #linkedin-icon {
+            animation-duration: 2s;
+            animation-delay: 500ms;
+        }
+
+        .col-md-4 {
+            padding-right: 0;
+        }
     </style>
 
 </head>
@@ -153,7 +171,7 @@
         <div class=container id=info>
             <div class=row>
                 <div class=col-md-8>
-                    <img class =img-fluid src='JT-pic.png' alt='There should be a pic of me here =(' height=400px width=600px>
+                    <img class=img-fluid src='JT-pic.png' alt='There should be a pic of me here =(' height=400px width=600px>
                 </div>
                 <div class=col-md-4>
                     <p>
@@ -171,7 +189,7 @@
     <footer>
         <div class=container>
             <div class="row" style="margin: 0px, 120px">
-                <div class="col-md-4">
+                <div class="col-md-4 small-screen-icon">
                     <div class="column small-3 medium-2">
                         <a href="mailto:belfortk@gmail.com">
                             <svg class='animated fadeInUp' id='email-icon' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -180,7 +198,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 small-screen-icon">
                     <div class="column small-3 medium-2">
                         <a href="https://github.com/belfortk">
                             <svg class='animated fadeInUp' id='github-icon' xmlns="http://www.w3.org/2000/svg" width="27" height="25.5" viewBox="883.5 865 27 25.5">
@@ -189,7 +207,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 small-screen-icon">
                     <div class="column small-3 medium-2">
                         <a href="https://www.linkedin.com/in/belfortk">
                             <svg class='animated fadeInUp' id='linkedin-icon' xmlns="http://www.w3.org/2000/svg" width="29.1" height="26.2" viewBox="883.5 867.8 29.1 26.2">

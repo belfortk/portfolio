@@ -101,10 +101,23 @@
       Box-shadow: 1px 1px 12px #000;
     }
 
+    .col-md-8 {
+      margin-bottom: 2em;
+    }
+    
+
     .col-md-4 {
       padding-right: 0;
     }
-
+    
+    @media all and (max-width: 767px){
+      .small-screen-icon{
+        width: 30%;
+        display:inline-block;
+        text-align:center;
+      }
+    }
+   
     #email-icon {
       animation-duration: 1s;
     }
@@ -172,21 +185,19 @@
       </article>
     </div>
   </div>
-  <div class=container id=project>
-    <div class=row>
-      <div class=col-md-8>
+  <div class='container' id='project'>
+    <div class='row'>
+      <div class='col-md-8'>
         <a href='https://kjb-us-drone-strikes.herokuapp.com/'>
           <img class='img-fluid grow' src='us-drone-strikes-site.png' alt='https://kjb-us-drone-strikes.herokuapp.com/' height=400px
             width=600px>
         </a>
 
       </div>
-      <div class=col-md-4>
+      <div class='col-md-4 col-xs-12'>
         My submission for the Origin 72 Hour Hackathon. I created an app that generates a map of the last 10 US drone strikes. You
         can generate a new map of the last 10 strikes customized by country, town, and minimum death tool. On the right is
         a feed of the latest NYT articles on US drone activity and policy.
-        <br>
-        <br>
         <br>
         <br>
         <br>
@@ -204,7 +215,7 @@
   <footer>
     <div class=container>
       <div class="row" style="margin: 0px, 120px">
-        <div class="col-md-4">
+        <div class="col-md-4 small-screen-icon">
           <div class="column small-3 medium-2">
             <a href="mailto:belfortk@gmail.com">
               <svg class='animated fadeInUp' id='email-icon' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -213,7 +224,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 small-screen-icon">
           <div class="column small-3 medium-2">
             <a href="https://github.com/belfortk">
               <svg class='animated fadeInUp' id='github-icon' xmlns="http://www.w3.org/2000/svg" width="27" height="25.5" viewBox="883.5 865 27 25.5">
@@ -222,7 +233,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 small-screen-icon">
           <div class="column small-3 medium-2">
             <a href="https://www.linkedin.com/in/belfortk">
               <svg class='animated fadeInUp' id='linkedin-icon' xmlns="http://www.w3.org/2000/svg" width="29.1" height="26.2" viewBox="883.5 867.8 29.1 26.2">

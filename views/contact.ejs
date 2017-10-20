@@ -42,6 +42,7 @@
     .row {
       margin-right: 70px;
       margin-left: 70;
+      padding-top: 3em;
     }
 
     h1,
@@ -82,6 +83,21 @@
       text-align: center;
       overflow: hidden;
     }
+
+    @media all and (max-width: 767px) {
+      .small-screen-icon {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    @media all and (max-width: 600px) {
+            .small-screen-contact-message {
+                text-align: center;
+                padding: 0;
+            }
+        }
 
     #email-icon {
       animation-duration: 1s;
@@ -180,7 +196,7 @@
     <container>
 
       <div class='row'>
-        <div class='col-md-6' id='messageToViewer'>
+        <div class='col-md-6 small-screen-contact-message' id='messageToViewer'>
           <h1>
             Get in touch
           </h1>
@@ -194,15 +210,15 @@
 
           <div class="form-group">
             <label for="">First Name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="What's your first name?">
+            <input type="text" class="form-control" id="firstName">
           </div>
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="What's your last name?">
+            <input type="text" class="form-control" id="lastName">
           </div>
           <div class="form-group">
             <label for="emailInput">Email address</label>
-            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="What's your email address?">
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="messageInput"> Message </label>
@@ -292,7 +308,7 @@
   <footer>
     <div class=container>
       <div class="row" style="margin: 0px, 120px">
-        <div class="col-md-4">
+        <div class="col-md-4 small-screen-icon">
           <div class="column small-3 medium-2">
             <a href="mailto:belfortk@gmail.com">
               <svg class='animated fadeInUp' id='email-icon' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -301,7 +317,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 small-screen-icon">
           <div class="column small-3 medium-2">
             <a href="https://github.com/belfortk">
               <svg class='animated fadeInUp' id='github-icon' xmlns="http://www.w3.org/2000/svg" width="27" height="25.5" viewBox="883.5 865 27 25.5">
@@ -310,7 +326,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 small-screen-icon">
           <div class="column small-3 medium-2">
             <a href="https://www.linkedin.com/in/belfortk">
               <svg class='animated fadeInUp' id='linkedin-icon' xmlns="http://www.w3.org/2000/svg" width="29.1" height="26.2" viewBox="883.5 867.8 29.1 26.2">

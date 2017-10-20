@@ -109,14 +109,18 @@
     .col-md-4 {
       padding-right: 0;
     }
-    
+
     @media all and (max-width: 767px){
       .small-screen-icon{
         width: 30%;
         display:inline-block;
         text-align:center;
       }
+      #project-desc{
+        margin-right:2em;
+      }
     }
+
    
     #email-icon {
       animation-duration: 1s;
@@ -177,9 +181,6 @@
       <br>
       <article>
         <p>
-          Javascript is love. Javascript is life. MERN stack forever.
-        </p>
-        <p>
           Check out my latest project:
         </p>
       </article>
@@ -194,7 +195,7 @@
         </a>
 
       </div>
-      <div class='col-md-4 col-xs-12'>
+      <div class='col-md-4 col-xs-12' id='project-desc'>
         My submission for the Origin 72 Hour Hackathon. I created an app that generates a map of the last 10 US drone strikes. You
         can generate a new map of the last 10 strikes customized by country, town, and minimum death tool. On the right is
         a feed of the latest NYT articles on US drone activity and policy.
